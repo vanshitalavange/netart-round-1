@@ -1,38 +1,118 @@
-.App {
-  text-align: center;
+:root {
+  --red-color: #ec3237;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.app-container {
+  gap: 1rem;
+  background: rgb(255, 253, 235);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 253, 235, 1) 1%,
+    rgba(255, 252, 222, 1) 50%,
+    rgba(255, 249, 198, 1) 80%
+  );
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-logo {
+  width: 20rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.app-main {
+  margin: 0 1rem;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 1rem;
+}
+.app-main-img-left {
+  max-width: 30%;
+}
+.app-main-sub-content {
+  margin: 1rem 0;
+}
+.sub-content {
+  width: 100%;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+.app-main-img-right {
+  max-width: 100%;
+}
+.app-section {
+  margin: 0 1rem;
+  gap: 1rem;
+}
+.section-pumpsets {
+  border-bottom: 2.5px solid var(--red-color);
+}
+
+.pump-sets {
+  width: 80%;
+  align-self: center;
+}
+.section-bottom {
+  margin-bottom: 1rem;
+}
+.section-keyword {
+  padding: 0 0.5rem;
+  border-right: 1px solid var(--red-color);
+}
+.app-footer {
+  margin: 0 0.5rem 0.5rem 0.5rem;
+  padding: 2rem 4rem;
+  background-color: var(--red-color);
+  justify-content: space-between;
+  gap: 2rem;
+}
+.contact-wrapper {
+  gap: 0.3rem;
+}
+.contact-icon {
+  background-color: white;
+  border-radius: 50%;
+  padding: 0.6rem;
+  color: var(--red-color);
+}
+.section-bottom-heading {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+.contact-info,
+.social-icon {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+/** utility classes **/
+.flex-column {
+  display: flex;
+  flex-direction: column;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.flex-row {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.justify-center {
+  justify-content: center;
+}
+.align-self-center {
+  align-self: center;
+}
+.text-align-center {
+  text-align: center;
+}
+.align-self-end {
+  align-self: flex-end;
+}
+@media only screen and (min-width: 1500px) {
+  html {
+    font-size: 130%;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media only screen and (max-width: 750px) {
+  .app-main {
+    flex-wrap: wrap;
   }
 }
