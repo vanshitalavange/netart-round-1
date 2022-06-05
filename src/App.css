@@ -1,7 +1,6 @@
 :root {
   --red-color: #ec3237;
 }
-
 body {
   margin: 0;
   padding: 0;
@@ -17,7 +16,6 @@ body {
     rgba(255, 249, 198, 1) 80%
   );
 }
-
 .app-logo {
   width: 20rem;
 }
@@ -82,6 +80,9 @@ body {
 .contact-info,
 .social-icon {
   color: white;
+}
+a{
+  text-decoration: none;
 }
 /** utility classes **/
 .flex-column {

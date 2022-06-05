@@ -67,15 +67,15 @@ function App() {
         <footer className='app-footer flex-row flex-wrap'>
           <div className="contact-wrapper flex-row">
             <BsFillTelephoneFill size={20} className='contact-icon' />
-            <a className='contact-info align-self-end'>Toll free 1800 200 1234</a>
+            <p className='contact-info align-self-end'>Toll free 1800 200 1234</p>
           </div>
           <div className="contact-wrapper flex-row">
             <BsFacebook className="social-icon" size={40} />
-            <a className='contact-info align-self-end'>www.facebook.com/cripumps</a>
+            <a href="www.facebook.com/cripumps" className='contact-info align-self-center'>www.facebook.com/cripumps</a>
           </div>
           <div className="contact-wrapper flex-row">
             <FaGlobe className='social-icon' size={40} />
-            <a className='contact-info align-self-end'>www.crigroups.com</a>
+            <a href="www.crigroups.com" className='contact-info align-self-center'>www.crigroups.com</a>
           </div>
         </footer>
       </div>
